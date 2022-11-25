@@ -3,7 +3,7 @@ import './Nav.css';
 function Nav() {
   return (
     <div className="Nav">
-        <div className="logo">NOVELIA</div>
+        <div className="logo">Novelia</div>
         <div className="listOfNavItems">
             <button className="item1 btn navBtn">Title 1</button>
             <button className="item2 btn navBtn">Title 2</button>
