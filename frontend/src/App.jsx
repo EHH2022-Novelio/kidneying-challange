@@ -1,19 +1,12 @@
 import './App.css';
-<<<<<<< Updated upstream
-import Chart from './components/Chart';
-=======
 import Nav from './Components/Navbar/Nav';
->>>>>>> Stashed changes
+import Chart from "./Components/Chart";
 
 function App() {
   return (
     <div className="App">
-<<<<<<< Updated upstream
-          <Chart/>
-
-=======
       <Nav />
->>>>>>> Stashed changes
+      <Chart />
     </div>
   );
 }
