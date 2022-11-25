@@ -19,8 +19,8 @@ body{
 
 .dataContainer{
     margin-top: 60px;
-    padding: 0 18%;
-    height: 100vh;
+    padding: 0 10%;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,6 +33,7 @@ body{
 
 .divider{
     margin: 20px 10%;
+    border-top-width: 2px;
 }
 
 .titleExp{
@@ -42,13 +43,18 @@ body{
     justify-content: center;
 }
 
+.titleExp > p{
+    max-width: 500px;
+}
+
 .btnGo{
-    margin: 3px 3px;
-    padding: 3px 6px;
+    margin: 8px 3px;
+    padding: 3px 3px;
     width: 10%;
 }
 
 .logo{
+    font-weight: bold;
     font-family: 'Syncopate', sans-serif;
     line-height: 60px;
     font-size: 18px;

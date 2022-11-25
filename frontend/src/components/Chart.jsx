@@ -51,10 +51,10 @@ const charts = () => {
     <>
       <div className='dataContainer'>
         <div>
-          <Chart chartType="ColumnChart" width="100%" height="400px" data={column_data} />
+          <Chart chartType="ColumnChart" width="550px" height="400px" data={column_data} />
           <div className='titleExp'>
             <h3>Title 1</h3>
-            <p>title 1 with very nice explanations!</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam erat volutpat. Duis viverra diam non justo. Vivamus luctus egestas leo. Proin in tellus sit amet nibh dignissim sagittis. Suspendisse sagittis ultrices augue. Nullam faucibus mi quis velit. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede. Etiam quis quam. Aenean fermentum risus id tortor. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Integer pellentesque quam vel velit. Fusce nibh. Etiam bibendum elit eget erat. Nullam sit amet magna in magna gravida vehicula. Ut enim ad minima veniam, quis nostrum exercitationem</p>
           </div>
         </div>
       </div>
@@ -62,12 +62,12 @@ const charts = () => {
       <div className='dataContainer'>
         <div>
         <div className='titleExp'>
-            <h3>Title 1</h3>
-            <p>title 1 with very nice explanations!</p>
+            <h3>Title 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam erat volutpat. Duis viverra diam non justo. Vivamus luctus egestas leo. Proin in tellus sit amet nibh dignissim sagittis. Suspendisse sagittis ultrices augue. Nullam faucibus mi quis velit. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede. Etiam quis quam. Aenean fermentum risus id tortor. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Integer pellentesque quam vel velit. Fusce nibh. Etiam bibendum elit eget erat. Nullam sit amet magna in magna gravida vehicula. Ut enim ad minima veniam, quis nostrum exercitationem</p>
         </div>
           <Chart
           chartType="Line"
-          width="100%"
+          width="550px"
           height="400px"
           data={line_data}
           options={line_options}
