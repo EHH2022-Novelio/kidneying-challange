@@ -48,17 +48,33 @@ export const line_options = {
 };
 const charts = () => {
   return (
-    <div>
-      <Chart chartType="ColumnChart" width="100%" height="400px" data={column_data} />
-      <Chart
-      chartType="Line"
-      width="100%"
-      height="400px"
-      data={line_data}
-      options={line_options}
-    />
-    </div>
-    
+    <>
+      <div className='dataContainer'>
+        <div>
+          <Chart chartType="ColumnChart" width="100%" height="400px" data={column_data} />
+          <div className='titleExp'>
+            <h3>Title 1</h3>
+            <p>title 1 with very nice explanations!</p>
+          </div>
+        </div>
+      </div>
+      <hr className='divider'/>
+      <div className='dataContainer'>
+        <div>
+        <div className='titleExp'>
+            <h3>Title 1</h3>
+            <p>title 1 with very nice explanations!</p>
+        </div>
+          <Chart
+          chartType="Line"
+          width="100%"
+          height="400px"
+          data={line_data}
+          options={line_options}
+          />
+        </div>
+      </div>
+    </>
   )
 }
 
