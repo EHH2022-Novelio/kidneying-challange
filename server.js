@@ -9,22 +9,16 @@ const PORT = process.env.PORT || 5000;
 
 const connection = `mongodb+srv://Novelia:wEl48hCMZNQMwWpF@novelia.nnqwj2b.mongodb.net/?retryWrites=true&w=majority`;
 
-var User = setUpMongoose();
+mongoose.connect(connection, {useNewUrlParser: true}, ()=>{
+	console.log("connected");
+});
 
-async function setUpMongoose(){
+const userSchema = new mongoose.Schema({
+    username: {required:true, type:String, unique: true, min:3},
+    password: {required:true, type:String}
+});
 
-    mongoose.connect(connection, {useNewUrlParser: true}, ()=>{
-        console.log("connected");
-        const userSchema = new mongoose.Schema({
-            username: {required:true, type:String, unique: true, min:3},
-            password: {required:true, type:String}
-        });
-        
-        const user = mongoose.model("users", userSchema);
-        User = user;
-    });
-    
-}
+const User = mongoose.model("users", userSchema);
 
 app.use(express.json());
 
