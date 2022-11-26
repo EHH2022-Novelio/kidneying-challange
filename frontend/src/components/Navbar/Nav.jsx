@@ -11,7 +11,7 @@ function Nav() {
             <button className="item4 btn navBtn">Title 4</button>
             <button className="item4 btn navBtn">Title 5</button>
         </div>
-        <button className="btn btn-primary btnGo">Add Patient</button>
+        <button className="btn btn-primary btnGo">Login</button>
     </div>
   );
 }
