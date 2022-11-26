@@ -6,9 +6,6 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Chart />
-      <hr className="divider" />
-      <Chart />
     </div>
   );
 }
