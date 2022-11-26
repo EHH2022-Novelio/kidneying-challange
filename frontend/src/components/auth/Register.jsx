@@ -22,10 +22,17 @@ function Sign(props) {
         }
     }
 
+    async function logWithTest(){
+        const result = await api.login({username, password});
+
+        props.setUser(result);
+    }
+
     return (
         <div className="sign">
             <div>
                 <h2>Sign Up</h2>
+                <button onClick={logWithTest} className="instantLogIn btn btn-outline-info">Login with test account</button>
                 <div className="restSign">
                     <div>
                         <label htmlFor="mail">Mail</label>

@@ -10,6 +10,12 @@
     gap: 10px;
 }
 
+.instantLogIn{
+    width: 100%;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
 .googleSign{
     display: flex;
     width: 250px;

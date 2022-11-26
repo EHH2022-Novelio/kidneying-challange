@@ -7,10 +7,6 @@ import  { useNavigate } from 'react-router-dom';
 function LogIn(props) {
 
     let history = useNavigate();
-    
-    function pushHistory(x){
-        this.props.history.push(x);
-    }
 
     const log = async () => {
         const username = document.getElementById("mail").value;
@@ -27,10 +23,17 @@ function LogIn(props) {
 
     }
 
+    async function logWithTest(){
+        const result = await api.login({username, password});
+
+        props.setUser(result);
+    }
+
     return (
         <div className="sign">
             <div>
                 <h2>Log In</h2>
+                <button onClick={logWithTest} className="instantLogIn btn btn-outline-info">Login with test account</button>
                 <div className="restSign">
                     <div>
                         <label htmlFor="mail">Mail</label>
