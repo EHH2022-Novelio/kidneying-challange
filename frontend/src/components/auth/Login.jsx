@@ -12,21 +12,24 @@ function LogIn(props) {
 
     return (
         <div className="sign">
-            <div className="restSign">
-                <div>
-                    <label htmlFor="mail">Mail</label>
-                    <input type="email" className="form-control" name="mail" id="mail" />
+            <div>
+                <h2>Log In</h2>
+                <div className="restSign">
+                    <div>
+                        <label htmlFor="mail">Mail</label>
+                        <input type="email" className="form-control" name="mail" id="mail" />
+                    </div>
+                    <div>
+                        <label htmlFor="password">Password</label>
+                        <input type="password" className="form-control" name="password" id="password" />
+                    </div>
+                    <div className="submit">
+                        <a href="/password">Forgot my password</a>
+                        <button className="btn btn-success" onClick={log}>Log In</button>
+                    </div>
                 </div>
-                <div>
-                    <label htmlFor="password">Password</label>
-                    <input type="password" className="form-control" name="password" id="password" />
-                </div>
-                <div className="submit">
-                    <a href="/password">Forgot my password</a>
-                    <button className="btn btn-primary" onClick={log}>Log In</button>
-                </div>
-                
             </div>
+            <img src=""/>
         </div>
     );
 }

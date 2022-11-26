@@ -1,9 +1,10 @@
 import './Nav.css';
+import {Link} from "react-router-dom"
 
 function Nav(props) {
   return (
     <div className="Nav">
-        <div className="logo">Novelia</div>
+        <Link to="/" className='logA'><div className="logo">Novelia</div></Link>
         <div className={props.logged === true ? "" : "notLogged"}>
           <div className="listOfNavItems">
               <button className="item1 btn navBtn">Title 1</button>
@@ -13,9 +14,7 @@ function Nav(props) {
               <button className="item4 btn navBtn">Title 5</button>
           </div>
         </div>
-        <div className={props.logged === true ? "" : "notLogged"}>
-          <button className="btn btn-primary btnGo">Login</button>
-        </div>
+        <Link className='loginLink logA' to="/login">Log In</Link>
     </div>
   );
 }

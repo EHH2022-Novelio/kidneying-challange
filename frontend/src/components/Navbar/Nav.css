@@ -13,9 +13,29 @@ body{
     font-size: 13px;
 }
 
+.btn-warning{
+    font-weight: 700;
+    color: white;
+}
+
+.loginLink{
+    line-height: 60px;
+    height: 60px;
+    color: white;
+}
+
+.logA{
+    color: white;
+    text-decoration-color: white !important;
+}
+
+.logA:hover{
+    color:white;
+    text-decoration-color: white !important;
+}
 
 .Nav{
-    background-color: #ffffff;
+    background-color: #2DB3D5;
     padding: 0 7%;
     z-index: 1;
     display: flex;
@@ -68,7 +88,9 @@ body{
 }
 
 .btnGo{
-    margin: 5px 3px;
+    padding: 0;
+    color: white;
+    height: 100%;
 }
 
 .logo{
@@ -90,8 +112,9 @@ body{
     border-radius: 0;
     height: 100%;
     padding: 10px 30px;
+    color: white;
 }
 
 .navBtn:hover{
-    background-color: rgba(28, 31, 199, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
 }
