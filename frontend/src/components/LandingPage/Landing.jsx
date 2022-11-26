@@ -14,12 +14,26 @@ function Landing() {
         <section className='Landing2'>
             <div>
                 <div className='parCont'>
-                    <h3>Never forget your check ups!</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. In convallis. In sem justo, commodo ut, suscipit at, pharetra vitae, orci. Integer vulputate sem a nibh rutrum consequat. Fusce wisi. Vestibulum fermentum tortor id mi. Pellentesque arcu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    <h3>Never forget your check-ups! </h3>
+                    <p>You can be sure that you will never miss a check-up. Set reminders for your monthly or annual check-ups. </p>
                 </div>
                 <div>
                     some Img
                 </div>
+            </div>
+        </section>
+        <hr className='divider'/>
+
+        <section className='Landing2'>
+            <div>
+                <div>
+                    some Img
+                </div>
+                <div className='parCont'>
+                    <h3>Understand your diabetes!</h3>
+                    <p>Get insights into what’s going on with your diabetes. Thanks to infographics you’ll be able to identify areas where your diabetes management could be optimized and keep your diabetes under control.</p>
+                </div>
+       
             </div>
         </section>
     </>
