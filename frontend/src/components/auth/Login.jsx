@@ -1,10 +1,12 @@
 import icons from "../../icons";
 import "./auth.css";
 import api from "../../api";
-import  { Redirect } from 'react-router-dom'
+import  { useNavigate } from 'react-router-dom';
 
 
 function LogIn(props) {
+
+    let history = useNavigate();
     
     function pushHistory(x){
         this.props.history.push(x);
@@ -20,7 +22,7 @@ function LogIn(props) {
             return;
         }else{
             props.setUser(result);
-            pushHistory("/");
+            history("/");
         }
 
     }

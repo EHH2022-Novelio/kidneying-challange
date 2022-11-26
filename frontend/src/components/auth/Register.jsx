@@ -1,8 +1,11 @@
 import icons from "../../icons";
 import "./auth.css";
 import api from "../../api";
+import  { useNavigate } from 'react-router-dom';
 
 function Sign(props) {
+
+    const history = useNavigate();
     
     const Register = async () => {
         const username = document.getElementById("mail").value;
@@ -14,7 +17,7 @@ function Sign(props) {
             if (result !== undefined){
                 console.log(result);
                 props.setUser(result);
-                this.props.history.push("/");
+                history("/");
             }
         }
     }

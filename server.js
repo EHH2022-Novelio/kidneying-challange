@@ -13,14 +13,14 @@ const connection = `mongodb+srv://Novelia:wEl48hCMZNQMwWpF@novelia.nnqwj2b.mongo
 
 mongoose.connect(connection, {useNewUrlParser: true}, ()=>{
 	console.log("connected");
-});
 
-const userSchema = new mongoose.Schema({
-    username: {required:true, type:String, unique: true, min:3},
-    password: {required:true, type:String}
+    const userSchema = new mongoose.Schema({
+        username: {required:true, type:String, unique: true, min:3},
+        password: {required:true, type:String}
+    });
+    
+    const User = mongoose.model("users", userSchema);
 });
-
-const User = mongoose.model("users", userSchema);
 
 app.use(express.json());
 
