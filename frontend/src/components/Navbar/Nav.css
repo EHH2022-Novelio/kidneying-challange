@@ -2,6 +2,12 @@ body{
     margin-top: 60px;
 }
 
+.notLogged{
+    display: none;
+}
+
+
+
 .Nav{
     background-color: #ffffff;
     padding: 0 7%;

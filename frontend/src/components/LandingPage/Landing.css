@@ -1,0 +1,40 @@
+.Landing{
+    text-align: left;
+    padding: 75px 20% 75px 50%;
+    color: white;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Landing > h3{
+    text-align: center;
+}
+
+.buttonCont{
+    display: flex;
+    justify-content: end;
+}
+
+.backgroundImage{
+    top:0;
+    left: 0;
+    z-index: -2;
+    height: 90vh;
+    width: 100vw;
+    position:absolute;
+    background-image: url("https://reliablebackgroundscreening.com/wp-content/uploads/2021/08/The-Importance-of-Healthcare-Background-Checks.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 90vh;
+}
+
+.overlay{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.7);
+    width: 100vw;
+    height: 90vh;
+}
