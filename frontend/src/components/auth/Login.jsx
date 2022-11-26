@@ -1,13 +1,28 @@
 import icons from "../../icons";
 import "./auth.css";
+import api from "../../api";
+import  { Redirect } from 'react-router-dom'
+
 
 function LogIn(props) {
+    
+    function pushHistory(x){
+        this.props.history.push(x);
+    }
 
-    const log = () => {
+    const log = async () => {
         const username = document.getElementById("mail").value;
         const password = document.getElementById("password").value;
 
-        
+        const result = await api.login({username, password});
+        console.log(result);
+        if (result.username === null){
+            return;
+        }else{
+            props.setUser(result);
+            pushHistory("/");
+        }
+
     }
 
     return (
