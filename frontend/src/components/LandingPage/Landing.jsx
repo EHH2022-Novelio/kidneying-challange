@@ -42,9 +42,7 @@ function Landing(props) {
 
         <section className='Landing2'>
             <div>
-                <div>
-                  <img src={graphImage} alt="Graph"  width={600} height={400} />
-                </div>
+                <img src={graphImage} alt="Graph"  width={600} height={400} />
                 <div className='parCont'>
                     <h3>Understand your diabetes!</h3>
                     <p>Get insights into what’s going on with your diabetes. Thanks to infographics you’ll be able to identify areas where your diabetes management could be optimized and keep your diabetes under control.</p>

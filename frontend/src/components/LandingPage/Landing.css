@@ -13,9 +13,13 @@ body{
     justify-content: center;
 }
 
+body{
+    padding: 0 0 60px 0; 
+}
+
 .Landing2{
     height: 60vh;
-    padding: 0 30%;
+    padding: 5% 15%;
     display: flex;
     flex-direction: column;
     justify-content: center;

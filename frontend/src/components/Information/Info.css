@@ -1,0 +1,24 @@
+.infoCont{
+    display:flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.infoSect{
+    padding: 10px 23%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iframeWidth{
+    width: 500px;
+    height: 250px;
+}
+
+.textsInfo{
+    padding: 20px 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
