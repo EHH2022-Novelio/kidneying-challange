@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 import  { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 import graphImage from '../../img/graph.png'; // Tell webpack this JS file uses this image
+import dashImage from '../../img/dash.png'; // Tell webpack this JS file uses this image
 
 function Landing(props) {
 
@@ -34,7 +35,7 @@ function Landing(props) {
                     <p>You can be sure that you will never miss a check-up. Set reminders for your monthly or annual check-ups. </p>
                 </div>
                 <div>
-                    some Img
+                <img src={dashImage} alt="Graph"  width={600} height={400} />
                 </div>
             </div>
         </section>

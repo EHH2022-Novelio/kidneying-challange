@@ -12,7 +12,7 @@ function Check() {
         <div className="cardContainer">
             <div className="check-card check-card-pastDue">
                 <div className='upperCard'>
-                    <div className="cardTitle">Eye Chekup</div>
+                    <div className="cardTitle">Eye check-up</div>
                     <div className="due">due: past 1 days</div>
                 </div>
                 <div className="cardCont">
@@ -21,7 +21,7 @@ function Check() {
             </div>
             <div className="check-card check-card-pastDue">
             <div className='upperCard'>
-                            <div className="cardTitle">Feet Examination</div>
+                            <div className="cardTitle">LDL check-up</div>
                             <div className="due">due: past 3 days</div>
                         </div>
                         <div className="cardCont">
@@ -30,7 +30,7 @@ function Check() {
             </div>
             <div className="check-card">
             <div className='upperCard'>
-                            <div className="cardTitle">Eye Chekup</div>
+                            <div className="cardTitle">BMI check-up</div>
                             <div className="due">due: in 3 days</div>
                         </div>
                         <div className="cardCont">
@@ -39,8 +39,8 @@ function Check() {
             </div>
             <div className="check-card">
             <div className='upperCard'>
-                            <div className="cardTitle">Eye Chekup</div>
-                            <div className="due">due: past 3 days</div>
+                            <div className="cardTitle">Blood pressure check-up</div>
+                            <div className="due">due: in 3 days</div>
                         </div>
                         <div className="cardCont">
                             <button className="btn btn-success">Checked</button>
@@ -48,8 +48,8 @@ function Check() {
             </div>
             <div className="check-card">
             <div className='upperCard'>
-                            <div className="cardTitle">Eye Chekup</div>
-                            <div className="due">due: past 3 days</div>
+                            <div className="cardTitle">Albumin Urine Creatine check-up</div>
+                            <div className="due">due: in 3 days</div>
                         </div>
                         <div className="cardCont">
                             <button className="btn btn-success">Checked</button>

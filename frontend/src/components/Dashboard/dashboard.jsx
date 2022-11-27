@@ -13,7 +13,7 @@ function Dashboard(props) {
                 </div>
                 <div className='check-card check-card-pastDue'>
                     <div className='upperCard'>
-                        <div className="cardTitle">Eye Chekup</div>
+                        <div className="cardTitle">Eye Check-up</div>
                         <div className="due">due: past 3 days</div>
                     </div>
                     <div className="cardCont">
@@ -22,7 +22,7 @@ function Dashboard(props) {
                 </div>
                 <div className='check-card'>
                     <div className='upperCard'>
-                        <div className="cardTitle">Eye Chekup</div>
+                        <div className="cardTitle">Foot Check-up</div>
                         <div className="due">due: in 5 days</div>
                     </div>
                     <div className="cardCont">
@@ -31,7 +31,7 @@ function Dashboard(props) {
                 </div>
                 <div className='check-card'>
                     <div className='upperCard'>
-                        <div className="cardTitle">Eye Chekup</div>
+                        <div className="cardTitle">Triglyceride Check-up</div>
                         <div className="due">due: in 17 days</div>
                     </div>
                     <div className="cardCont">
@@ -46,19 +46,19 @@ function Dashboard(props) {
                 </div>
                 <div className='check-card check-card-history'>
                     <div className='upperCard'>
-                        <div className="cardTitle">Eye Chekup</div>
+                        <div className="cardTitle">Hemoglobin Check-up</div>
                         <div className="due">Completed: 1 days ago</div>
                     </div>
                 </div>
                 <div className='check-card check-card-history'>
                     <div className='upperCard'>
-                        <div className="cardTitle">Eye Chekup</div>
+                        <div className="cardTitle">Cholesterol Check-up</div>
                         <div className="due">Completed: 5 days ago</div>
                     </div>
                 </div>
                 <div className='check-card check-card-history'>
                     <div className='upperCard'>
-                        <div className="cardTitle">Eye Chekup</div>
+                        <div className="cardTitle">ECG Check-up</div>
                         <div className="due">Completed: 17 days ago</div>
                     </div>
                 </div>
