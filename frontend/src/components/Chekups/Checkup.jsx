@@ -31,7 +31,7 @@ function Check() {
             <div className="check-card">
             <div className='upperCard'>
                             <div className="cardTitle">BMI check-up</div>
-                            <div className="due">due: in 3 days</div>
+                            <div className="due">due: in 2 days</div>
                         </div>
                         <div className="cardCont">
                             <button className="btn btn-success">Checked</button>
@@ -40,7 +40,7 @@ function Check() {
             <div className="check-card">
             <div className='upperCard'>
                             <div className="cardTitle">Blood pressure check-up</div>
-                            <div className="due">due: in 3 days</div>
+                            <div className="due">due: in 13 days</div>
                         </div>
                         <div className="cardCont">
                             <button className="btn btn-success">Checked</button>
@@ -49,7 +49,7 @@ function Check() {
             <div className="check-card">
             <div className='upperCard'>
                             <div className="cardTitle">Albumin Urine Creatine check-up</div>
-                            <div className="due">due: in 3 days</div>
+                            <div className="due">due: in 35 days</div>
                         </div>
                         <div className="cardCont">
                             <button className="btn btn-success">Checked</button>
