@@ -74,7 +74,7 @@ function Dashboard(props) {
             </div>
             <div className='dashCard'>
                 <h3>Information About Diabetes</h3>
-                <iframe className='iframeDash' src="https://www.sitarambhartia.org/blog/endocrinology/diabetes-check-up/" frameBorder="0"></iframe>
+                <iframe className='iframeDash' src="https://www.youtube.com/embed/rVH9J9uuySc" title="Diabetes - A lucrative disease | DW Documentary" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </section>
     </div>

@@ -7,6 +7,7 @@ import Chart from './Components/Infograph/Chart';
 import {Routes, Route} from "react-router-dom";
 import { useState } from 'react';
 import Dashboard from './Components/Dashboard/dashboard';
+import Check from './Components/Chekups/Checkup';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard user={user} />}></Route>
         <Route path='/register' element={<Sign user={user} setUser={setUser}/>}></Route>
         <Route path='/infograph' element={<Chart setUser={setUser}/>}></Route>
+        <Route path='/Checkups' element={<Check user={user}/>}></Route>
       </Routes>
     </>
   );
