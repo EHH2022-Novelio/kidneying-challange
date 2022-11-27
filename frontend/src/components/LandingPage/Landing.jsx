@@ -2,6 +2,7 @@ import './Landing.css';
 import {Link} from "react-router-dom";
 import  { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+import graphImage from '../../img/graph.png'; // Tell webpack this JS file uses this image
 
 function Landing(props) {
 
@@ -42,7 +43,7 @@ function Landing(props) {
         <section className='Landing2'>
             <div>
                 <div>
-                    some Img
+                  <img src={graphImage} alt="Graph"  width={600} height={400} />
                 </div>
                 <div className='parCont'>
                     <h3>Understand your diabetes!</h3>

@@ -2,11 +2,11 @@ import { Chart } from "react-google-charts";
 
 
 export const column_data = [
-  ["Element", "Density", { role: "style" }],
-  ["Copper", 8.94, "#b87333"], // RGB value
-  ["Silver", 10.49, "silver"], // English color name
-  ["Gold", 19.3, "gold"],
-  ["Platinum", 21.45, "color: #e5e4e2"], // CSS-style declaration
+  ["Month", "check-ups"],
+  ["January", 4], // RGB value
+  ["February", 6], // English color name
+  ["March", 2],
+  ["April", 5], // CSS-style declaration
 ];
 
 export const line_data = [
@@ -56,15 +56,15 @@ const charts = () => {
       <div className='dataContainer'>
         <div>
         <div className='titleExp'>
-            <h3>Title 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam erat volutpat. Duis viverra diam non justo. Vivamus luctus egestas leo. Proin in tellus sit amet nibh dignissim sagittis. Suspendisse sagittis ultrices augue. Nullam faucibus mi quis velit. Duis ante orci, molestie vitae vehicula venenatis, tincidunt ac pede. Etiam quis quam. Aenean fermentum risus id tortor. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Integer pellentesque quam vel velit. Fusce nibh. Etiam bibendum elit eget erat. Nullam sit amet magna in magna gravida vehicula. Ut enim ad minima veniam, quis nostrum exercitationem</p>
+            <h3>Check-ups</h3>
+            <p>Regular health check-ups can identify any early signs of health issues. Finding problems early means that your chances for effective treatment are increased. Keep track of your check-ups.</p>
         </div>
           <Chart
-          chartType="Line"
+          chartType="ColumnChart"
           width="550px"
           height="400px"
-          data={line_data}
-          options={line_options}
+          data={column_data}
+          // options={line_options}
           />
         </div>
       </div>
