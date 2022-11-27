@@ -71,5 +71,8 @@ const charts = () => {
     </>
   )
 }
+export const singleChart = () => {
+   return <Chart chartType="LineChart" width="330px" height="200px" data={line_data} options={line_options} />
+}
 
 export default charts;

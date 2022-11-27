@@ -1,5 +1,5 @@
 import './dashboard.css';
-
+import { singleChart } from '../Infograph/Chart';
 function Dashboard(props) {
   return (
     <div className="Dashboard">
@@ -71,7 +71,9 @@ function Dashboard(props) {
             <div className='dashCard'>
                 <h3 className="titleGraph">Last Updated Graph</h3>
                 <span className="updateDate">Updated on 13/11/2022</span>
-                <div>Graph goes here</div>
+                <div>
+                    {singleChart()}
+                </div>
             </div>
             <div className='dashCard'>
                 <h3>Information About Diabetes</h3>
