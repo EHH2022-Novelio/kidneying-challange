@@ -8,6 +8,7 @@ import {Routes, Route} from "react-router-dom";
 import { useState } from 'react';
 import Dashboard from './Components/Dashboard/dashboard';
 import Check from './Components/Chekups/Checkup';
+import Info from './Components/Information/Info';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path='/register' element={<Sign user={user} setUser={setUser}/>}></Route>
         <Route path='/infograph' element={<Chart setUser={setUser}/>}></Route>
         <Route path='/Checkups' element={<Check user={user}/>}></Route>
+        <Route path='/information' element={<Info user={user}/>}></Route>
       </Routes>
     </>
   );
