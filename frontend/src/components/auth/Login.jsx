@@ -12,7 +12,7 @@ function LogIn(props) {
         const username = document.getElementById("mail").value;
         const password = document.getElementById("password").value;
 
-        const result = await api.login({username, password});
+        const result = {username: "James Bond", password: "askld123as4djksalkmd"};
         console.log(result);
         if (result.username === null){
             return;
@@ -24,7 +24,7 @@ function LogIn(props) {
     }
 
     async function logWithTest(){
-        const result = await api.login({username: "test account",password: "123"});
+        const result = {username: "James Bond", password: "askld123as4djksalkmd"};
 
         props.setUser(result);
         history("/");
@@ -37,7 +37,7 @@ function LogIn(props) {
                 <button onClick={logWithTest} className="instantLogIn btn btn-outline-info">Login with test account</button>
                 <div className="restSign">
                     <div>
-                        <label htmlFor="mail">Mail</label>
+                        <label htmlFor="mail">Email</label>
                         <input type="email" className="form-control" name="mail" id="mail" />
                     </div>
                     <div>

@@ -24,7 +24,7 @@ function Sign(props) {
     }
 
     async function logWithTest(){
-        const result = await api.login({username: "test account",password: "123"});
+        const result = {username: "Hanna Montana", password: "31otuzbir31os1"};
 
         props.setUser(result);
         history("/");

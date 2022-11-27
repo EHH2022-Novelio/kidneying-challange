@@ -5,9 +5,6 @@ function Dashboard(props) {
     <div className="Dashboard">
         {/* <div className="dashBackground"></div> */}
         {/* <div className="overlayDash"></div> */}
-        <div className='nameCont'>
-            <h1>Dashboard</h1>
-        </div>
         <section className='row'>
             <div className='dashCard'>
                 <div>
