@@ -15,7 +15,9 @@ mongoose.connect(connection, {useNewUrlParser: true}, ()=>{
 
 const userSchema = new mongoose.Schema({
     username: {required:true, type:String, unique: true, min:3},
-    password: {required:true, type:String}
+    password: {required:true, type:String},
+    smoker: {required:true, type: Boolean},
+
 });
 
 const User = mongoose.model("users", userSchema);
@@ -44,11 +46,13 @@ app.post("/api/register", (req, res) => {
     
     const newUser = new User({
         username: req.body.username,
-        password: CryptoJS.MD5(req.body.password).toString()
+        password: CryptoJS.MD5(req.body.password).toString(),
+        smoker: req.body.smoker
     });
     
         newUser.save((err, result) => {
             if (err){
+                console.log(err);
                 res.status(500).send(err);
             }else if (result.length === 0){
                 res.status(400).send("Password or user name is wrong");

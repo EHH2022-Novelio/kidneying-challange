@@ -1,0 +1,108 @@
+body{
+    background-color: #DDDDDD;
+}
+
+.Dashboard{
+    background-color: white;
+    border-radius: 10px;
+    margin: 100px 20%;
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+}
+
+.dashBackground{
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    /* background-image: url("https://abrakadabra.fun/uploads/posts/2022-02/1644752605_18-abrakadabra-fun-p-meditsinskii-fon-vektor-19.png"); */
+    width: 100vw;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100vw 125vh;
+}
+
+.overlayDash{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 125vh;
+    background-color: rgba(0,0,0,0.4);
+    
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.weekNumber{
+    font-weight: bold;
+}
+
+.iframeDash{
+    height: 90%;
+}
+
+.check-card-history{
+    min-height: 76px;
+    color: white !important;
+    background-color: #B0B1B1 !important;
+}
+
+.dashCard{
+    background-color: white;
+    min-height: 374px;
+    padding: 3%;
+    flex-basis: 45%;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px
+}
+
+.nameCont{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+#dashName{
+    font-weight: bold;
+}
+
+
+.check-card{
+    padding: 6px 12px;
+    gap: 3px;
+    color: black;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    background-color: #76C5D8;
+}
+
+.check-card-pastDue{
+    color: white;
+    background-color: #F55C5C;
+}
+
+.upperCard{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardCont{
+    display: flex;
+    justify-content: end;
+}

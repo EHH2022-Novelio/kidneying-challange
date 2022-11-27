@@ -1,7 +1,16 @@
 import './Landing.css';
 import {Link} from "react-router-dom";
+import  { useNavigate } from 'react-router-dom';
 
-function Landing() {
+function Landing(props) {
+
+    const history = useNavigate();
+    if (props.user !== {}){
+        
+        history("/dashboard");
+    }else{
+        console.log("not logged");
+    }
   return (
     <>
         <section className='Landing'>

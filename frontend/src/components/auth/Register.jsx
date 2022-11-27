@@ -11,8 +11,9 @@ function Sign(props) {
         const username = document.getElementById("mail").value;
         const password = document.getElementById("password").value;
         const confirmPassword = document.getElementById("confirmPassword").value;
+        const smoker = document.getElementById("smoking").value === "yes";
         if (password === confirmPassword){
-            const result = await api.register({username, password});
+            const result = await api.register({username, password, smoker});
             console.log(result);
             if (result !== undefined){
                 console.log(result);
@@ -26,6 +27,7 @@ function Sign(props) {
         const result = await api.login({username: "test account",password: "123"});
 
         props.setUser(result);
+        history("/");
     }
 
     return (
@@ -35,8 +37,8 @@ function Sign(props) {
                 <button onClick={logWithTest} className="instantLogIn btn btn-outline-info">Login with test account</button>
                 <div className="restSign">
                     <div>
-                        <label htmlFor="mail">Mail</label>
-                        <input type="email" className="form-control" name="mail" id="mail" />
+                        <label htmlFor="mail">User Name</label>
+                        <input type="text" className="form-control" name="mail" id="mail" />
                     </div>
                     <div>
                         <label htmlFor="password">Password</label>
@@ -45,6 +47,14 @@ function Sign(props) {
                     <div>
                         <label htmlFor="confirmPassword">Confirm Password</label>
                         <input type="password" className="form-control" name="confirmPassword" id="confirmPassword" />
+                    </div>
+                    <div>
+                        <label htmlFor="smoking">Are you smoking: </label>
+                        <select name="smoking" className="form-control" id="smoking">
+                            <option value="no">no</option>
+                            <option value="yes">yes</option>
+                        </select>
+                        
                     </div>
                     <div className="submit">
                         <a className="hrefButton" href="/login">I have an account</a>

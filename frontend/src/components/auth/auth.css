@@ -39,14 +39,14 @@
     box-shadow: 0px 0px 1px 0.5px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 7px;
     width: 400px;
     background-color: #FFFFFF;
     padding: 10px;
     border-radius: 2px;
 }
 
-.restSign > div > input{
+.restSign > div > input, .restSign > div > select{
     width: 200px !important;
     border-width: 0.1px !important;
 }

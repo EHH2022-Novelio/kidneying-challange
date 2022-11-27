@@ -5,6 +5,8 @@ import LogIn from './Components/auth/Login';
 import Sign from './Components/auth/Register';
 import {Routes, Route} from "react-router-dom";
 import { useState } from 'react';
+import Dashboard from './Components/Dashboard/dashboard';
+
 
 function App() {
 
@@ -13,12 +15,12 @@ function App() {
 
   return (
     <>
-      <Nav logged={false}/>
+      <Nav user={user}/>
       <Routes>
-        <Route path='/' element={<Landing />}></Route>
-        <Route path='/login' element={<LogIn setUser={setUser}/>}></Route>
-        <Route path="/home" element={null}></Route>
-        <Route path='/register' element={<Sign setUser={setUser}/>}></Route>
+        <Route path='/' element={<Landing user={user} />}></Route>
+        <Route path='/login' element={<LogIn user={user} setUser={setUser}/>}></Route>
+        <Route path="/dashboard" element={<Dashboard user={user} />}></Route>
+        <Route path='/register' element={<Sign user={user} setUser={setUser}/>}></Route>
       </Routes>
     </>
   );

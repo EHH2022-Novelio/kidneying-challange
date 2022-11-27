@@ -27,6 +27,7 @@ function LogIn(props) {
         const result = await api.login({username: "test account",password: "123"});
 
         props.setUser(result);
+        history("/");
     }
 
     return (
