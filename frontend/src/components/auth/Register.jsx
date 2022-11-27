@@ -8,19 +8,9 @@ function Sign(props) {
     const history = useNavigate();
     
     const Register = async () => {
-        const username = document.getElementById("mail").value;
-        const password = document.getElementById("password").value;
-        const confirmPassword = document.getElementById("confirmPassword").value;
-        const smoker = document.getElementById("smoking").value === "yes";
-        if (password === confirmPassword){
-            const result = await api.register({username, password, smoker});
-            console.log(result);
-            if (result !== undefined){
-                console.log(result);
-                props.setUser(result);
-                history("/");
-            }
-        }
+        const result = {username: "Hanna Montana", password: "31otuzbir31os1"};
+        props.setUser(result);
+        history("/");
     }
 
     async function logWithTest(){
