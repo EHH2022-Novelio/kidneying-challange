@@ -8,11 +8,12 @@
     padding: 10px 23%;
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .iframeWidth{
-    width: 500px;
-    height: 250px;
+    width: 500px !important;
+    height: 250px !important;
 }
 
 .textsInfo{
